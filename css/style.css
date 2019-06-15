@@ -1,3 +1,19 @@
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ralewayregular', Tahoma, sans-serif;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+
+
 /* fonts */
 
 @font-face {
@@ -7,6 +23,80 @@
     font-style: normal;
 }
 
-* {
-    font-family: 'ralewayregular', Tahoma, sans-serif;
+
+/* header */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
 }
+
+.menuLeft {
+    width: 30%;
+}
+
+.menuRight {
+    width: 20%;
+}
+
+.menuRight a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+header span {
+    color: blue;
+}
+
+.firstNav {
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.firstNav li {
+    display: inline-block;
+}
+
+#dropdown {
+    position: relative;
+}
+
+.secondNav {
+    text-transform: none;
+    list-style-type: none;
+    position: absolute;
+    top: 30px;
+    right: 200px;
+    height: 100px;
+    width: 80px;
+    display: none;
+}
+
+#dropdown a:hover {
+    color: yellow;
+}
+
+
+/* section chairAndText */
+
+
+/* section chairOptions */
+
+
+/* section chairPrices */
+
+
+/* section chairContact */
+
+
+/* footer */
