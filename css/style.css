@@ -8,9 +8,9 @@
 }
 
 .container {
-    width: 900px;
+    max-width: 1024px;
     margin: 0 auto;
-    border: 1px solid green;
+    padding: 20px 10px;
 }
 
 
@@ -76,14 +76,35 @@ header span {
     list-style-type: none;
     position: absolute;
     top: 30px;
-    right: 200px;
+    right: 0px;
     height: 100px;
     width: 80px;
     display: none;
+    background-color: black;
 }
 
-#dropdown a:hover {
-    color: yellow;
+.secondNav:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid black;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    top: 50px;
+    left: 100px;
+    position: absolute;
+}
+
+.firstNav a,
+.secondNav a {
+    color: white;
+    text-decoration: none;
+}
+
+#dropdown:hover .secondNav {
+    display: block;
+    z-index: 1;
 }
 
 
@@ -135,6 +156,7 @@ header span {
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .chairText span {
@@ -152,69 +174,371 @@ header span {
 .chairOptions {
     display: flex;
     justify-content: space-between;
-    height: 200px;
+    height: 300px;
 }
 
 .chairClair {
-    width: 32%;
-    height: 150px;
+    width: 31%;
+    height: 220px;
     background-image: url("../images/box1_img.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
 }
 
-.chairClair div {
-    height: 30px;
-    opacity: 0.5;
-}
-
 .chairMargarita {
-    width: 32%;
-    height: 150px;
+    width: 31%;
+    height: 220px;
     background-image: url("../images/box2_img.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
 }
 
+.textFindInputs {
+    width: 31%;
+    height: 260px;
+    border: 1px solid grey;
+}
+
 .opacityChairClair {
-    height: 70px;
-    width: 75%;
-    background: rgba(255, 255, 255, 0.7);
+    height: 60px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.4);
     position: absolute;
-    top: 100px;
+    top: 120px;
     left: 0;
+}
+
+.opacityChairClair h2:after {
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #27c7ab;
+    display: block;
 }
 
 .opacityChairMargarita {
-    height: 70px;
-    width: 75%;
-    background: rgba(255, 255, 255, 0.7);
+    height: 60px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.4);
     position: absolute;
-    top: 80px;
+    top: 120px;
     left: 0;
 }
 
-.textFindInputs {
-    width: 32%;
-    height: 170px;
+.opacityChairMargarita h2:after {
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #27c7ab;
+    display: block;
+}
+
+.textFindInputs h2:after {
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #27c7ab;
+    display: block;
 }
 
 
-/* section chairPrices */
+/* section prices */
+
+.prices {
+    height: 600px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+#headline:after {
+    content: "";
+    height: 7px;
+    width: 300px;
+    background-color: #27c7ab;
+    display: block;
+}
+
+.planOption {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    margin: 30px 0;
+}
+
+.basicPlan {
+    width: 31%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+.basicPlan:before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid green;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.basicPlan:after {
+    content: "";
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid green;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.standardPlan {
+    width: 31%;
+    border: 1px solid #27c7ab;
+    text-align: center;
+    position: relative;
+}
+
+.standardPlan:before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid green;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.standardPlan:after {
+    content: "";
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid green;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.advancedPlan {
+    width: 31%;
+    border: 1px solid grey;
+    text-align: center;
+    position: relative;
+}
+
+.advancedPlan:before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid green;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.advancedPlan:after {
+    content: "";
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid green;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.priceOption:after {
+    content: "99";
+    position: absolute;
+    font-size: 10px;
+}
+
+.priceOption:before {
+    content: "";
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid yellow;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.headlineOption {
+    height: 15%;
+}
+
+.priceOption {
+    height: 30%;
+    position: relative;
+}
+
+.firstOption {
+    height: 10%;
+}
+
+.secondOption {
+    height: 10%;
+}
+
+.thirdOption {
+    height: 10%;
+}
+
+.fourthOption {
+    height: 10%;
+}
+
+.basicPlan .buttonOption {
+    height: 35%;
+}
+
+.standardPlan .buttonOption {
+    height: 25%;
+}
+
+.advancedPlan .buttonOption {
+    height: 15%;
+}
 
 
 /* section chairContact */
+
+.contact {
+    display: flex;
+    height: 400px;
+}
+
+.redChair {
+    background-image: url("../images/red_chair.png");
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact h1 {
+    text-transform: uppercase;
+}
+
+.contact h1:after {
+    content: "";
+    height: 7px;
+    width: 300px;
+    background-color: #27c7ab;
+    display: block;
+}
+
+.form1 {
+    width: 60%;
+}
+
+.form2 {
+    width: 40%;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 80.6%;
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+textarea {
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+#agreeCheckbox {
+    display: none;
+}
+
+.checker {
+    background-image: url("../images/form_ok.jpg");
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.class {
+    padding-left: 50px;
+    position: relative;
+}
+
+.class:after {
+    clear: both;
+    content: "";
+    width: 45px;
+    height: 45px;
+    border: 1px solid #27c7ab;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+label[for="send"] {
+    padding-top: 50px;
+    text-align: center;
+}
 
 
 /* footer */
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #lastParagraph {
     text-transform: uppercase;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    width: 140px;
+}
+
+.logo1 {
+    background-image: url("../images/flickr.png");
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+}
+
+.logo2 {
+    background-image: url("../images/vimeo.png");
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    padding: 0 10px;
+}
+
+.logo3 {
+    background-image: url("../images/pinterest.png");
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    padding: 0 10px;
+}
+
+.logo4 {
+    background-image: url("../images/twitter.png");
+    height: 30px;
+    width: 30px;
+    background-size: contain;
 }

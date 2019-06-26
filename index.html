@@ -18,12 +18,14 @@
             <div class="menuRight">
                 <nav>
                     <ul class="firstNav">
-                        <li id="dropdown"><a href="#">O firmie</a></li>
-                        <ul class="secondNav">
-                            <li><a href="#">Aktualności</a></li>
-                            <li><a href="#">Nasz team</a></li>
-                            <li><a href="#">Historia</a></li>
-                        </ul>
+                        <li id="dropdown"><a href="#">O firmie</a>
+                            <ul class="secondNav">
+                                <li><a href="#">Aktualności</a></li>
+                                <li><a href="#">Nasz team</a></li>
+                                <li><a href="#">Historia</a></li>
+                            </ul>
+
+                        </li>
                         <li><a href="#">Galeria</a></li>
                         <li><a href="#">Kontakt</a></li>
                     </ul>
@@ -39,81 +41,148 @@
         <article class="chairText">
             <h1>Sit <span>on</span> our <span>chair</span></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in nisi luctus, sagittis ipsum vitae, rutrum velit. Vivamus posuere, massa ac hendrerit volutpat, enim mi gravida felis, quis faucibus nisi ligula a est. Praesent tincidunt.</p>
-            <button>Zobacz więcej</button>
+            <div>
+                <button>Zobacz więcej</button>
+            </div>
         </article>
     </section>
 
     <section class="chairOptions container">
+
         <article class="chairClair">
-            <div class="opacityChairClair"></div>
-            <h2>Chair <span>Clair</span></h2>
-
+            <div class="opacityChairClair">
+                <h2>Chair <span>Clair</span></h2>
+            </div>
         </article>
+
         <article class="chairMargarita">
-            <div class="opacityChairMargarita"></div>
-            <h2>Chair <span>Margarita</span></h2>
-
+            <div class="opacityChairMargarita">
+                <h2>Chair <span>Margarita</span></h2>
+            </div>
         </article>
-        <article class="textFindInputs container">
+
+        <article class="textFindInputs">
             <div>
                 <h2>Finds all inputs</h2>
                 <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.</p>
                 <p>Notice there is no change when clicking the checkboxes since no click events have been.</p>
             </div>
         </article>
+
     </section>
 
-    <section class="prices container">
-        <h1>Cennik</h1>
-        <div class="basicPlan">
-            <h1>Basic plan</h1>
-            <h1>85</h1>
-            <h2>PLN/MSC</h2>
-            <p>Zakup towaru + dowóz</p>
-            <p>Serwis</p>
-            <button>Dołącz</button>
-        </div>
-        <div class="standardPlan">
-            <h1>Standard plan</h1>
-            <h1>95</h1>
-            <h2>PLN/MSC</h2>
-            <p>Zakup towaru + dowóz</p>
-            <p>Serwis</p>
-            <p>Gwarancja 5 lat</p>
-            <button>Dołącz</button>
-        </div>
-        <div class="advancedPlan">
-            <h1>Standard plan</h1>
-            <h1>211</h1>
-            <h2>PLN/MSC</h2>
-            <p>Zakup towaru + dowóz</p>
-            <p>Serwis</p>
-            <p>Gwarancja 6 lat</p>
-            <p>Porady projektanta</p>
-            <button>Dołącz</button>
+    <section class="prices">
+        <div class="container">
+            <h1 id="headline">Cennik</h1>
+            <div class="planOption">
+                <article class="basicPlan">
+                    <div class="headlineOption">
+                        <h1>Basic plan</h1>
+                    </div>
+                    <div class="priceOption">
+                        <h1>85</h1>
+                        <h2>PLN/MSC</h2>
+                    </div>
+                    <div class="firstOption">
+                        <p>Zakup towaru + dowóz</p>
+                    </div>
+                    <div class="secondOption">
+                        <p>Serwis</p>
+                    </div>
+                    <div class="buttonOption">
+                        <button>Dołącz</button>
+                    </div>
+                </article>
+                <article class="standardPlan">
+                    <div class="headlineOption">
+                        <h1>Standard plan</h1>
+                    </div>
+                    <div class="priceOption">
+                        <h1>95</h1>
+                        <h2>PLN/MSC</h2>
+                    </div>
+                    <div class="firstOption">
+                        <p>Zakup towaru + dowóz</p>
+                    </div>
+                    <div class="secondOption">
+                        <p>Serwis</p>
+                    </div>
+                    <div class="thirdOption">
+                        <p>Gwarancja 5 lat</p>
+                    </div>
+                    <div class="buttonOption">
+                        <button>Dołącz</button>
+                    </div>
+                </article>
+                <article class="advancedPlan">
+                    <div class="headlineOption">
+                        <h1>Standard plan</h1>
+                    </div>
+                    <div class="priceOption">
+                        <h1>211</h1>
+                        <h2>PLN/MSC</h2>
+                    </div>
+                    <div class="firstOption">
+                        <p>Zakup towaru + dowóz</p>
+                    </div>
+                    <div class="secondOption">
+                        <p>Serwis</p>
+                    </div>
+                    <div class="thirdOption">
+                        <p>Gwarancja 6 lat</p>
+                    </div>
+                    <div class="fourthOption">
+                        <p>Porady projektanta</p>
+                    </div>
+                    <div class="buttonOption">
+                        <button>Dołącz</button>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
+
     <section class="contact container">
-        <h1>Kontakt</h1>
-        <form action="#">
-            <input type="text" name="userName" id="name" placeholder="Imię">
-            <input type="email" name="userEmail" id="email" placeholder="email">
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Wiadomość"></textarea>
-            <label for="agree">Zgadzam się na przetwarzanie danych osobowych
-            <input type="checkbox" name="agree" checked></label>
-            <label for="send"><input type="submit" value="Wyślij"></label>
-        </form>
-        <div class="redChair"></div>
+
+        <div class="form1">
+            <h1>Kontakt</h1>
+
+            <form action="#">
+                <label for="userName">              
+                <input type="text" name="userName" id="name" placeholder="Imię">
+            </label>
+                <label for="UserEmail">
+                <input type="email" name="userEmail" id="email" placeholder="email">
+            </label>
+                <textarea name="message" id="" cols="42" rows="10" placeholder="Wiadomość"></textarea>
+            </form>
+        </div>
+        <div class="form2">
+            <div class="redChair"></div>
+            <form action="#">
+                <label for="agreeCheckbox" class="checker"></label>
+                <div class="class">
+                    <input type="checkbox" id="agreeCheckbox">Zgadzam się na przetwarzanie danych osobowych
+                </div>
+                <label for="send"><input type="submit" value="Wyślij"></label>
+            </form>
+
+        </div>
     </section>
 
-    <footer class="container">
-        <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <p id="lastParagraph">Sit on chair
-            <p>
+    <footer>
+        <div class="copyright">
+            <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
+        </div>
+        <div class="logos">
+            <div class="logo1"></div>
+            <div class="logo2"></div>
+            <div class="logo3"></div>
+            <div class="logo4"></div>
+        </div>
+        <div class="endParagraph">
+            <p id="lastParagraph">Sit on chair</p>
+        </div>
     </footer>
 </body>
 
