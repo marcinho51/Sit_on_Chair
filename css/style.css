@@ -8,7 +8,7 @@
 }
 
 .container {
-    max-width: 1168px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -43,10 +43,10 @@ header {
     width: 30%;
 }
 
-.menuLeft h1,
-.menuLeft span {
+.menuLeft h1 {
     font-size: 14px;
     text-transform: uppercase;
+    font-weight: 100;
 }
 
 .menuLeft span {
@@ -87,7 +87,7 @@ header {
     right: 20px;
     height: 100px;
     width: 120px;
-    display: block;
+    display: none;
     background-color: black;
     text-align: left;
     padding-left: 10px;
@@ -118,11 +118,10 @@ header {
     text-decoration: none;
 }
 
-
-/* #dropdown:hover .secondNav {
+#dropdown:hover .secondNav {
     display: block;
     z-index: 1;
-} */
+}
 
 
 /* section chairAndText */
@@ -130,10 +129,8 @@ header {
 .chairAndText {
     margin: 60px 0 0 18px;
     display: flex;
-    justify-content: flex-start;
-    position: relative;
-    height: 450px;
-    background: rgba(255, 255, 255, 1);
+    center justify-contencenter position: relacenter height: 450px;
+    center background: rgba(255, 255, 255, 1);
     background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
@@ -223,39 +220,40 @@ header {
 
 .chairOptions {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 300px;
     margin-top: 20px;
 }
 
 .chairClair {
-    width: 32%;
+    width: 31.5%;
     height: 220px;
     background-image: url("../images/box1_img.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
 .chairMargarita {
-    width: 32%;
+    width: 31.5%;
     height: 220px;
     background-image: url("../images/box2_img.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
 .textFindInputs {
-    width: 32%;
+    width: 31.5%;
     height: 250px;
-    border: 1px solid lightgray;
+    border: 1px solid #B9B8BA;
+    ;
     padding: 15px 26px;
 }
 
 .opacityChairClair {
     height: 60px;
-    width: 90%;
+    width: 100%;
     background: rgba(255, 255, 255, 0.4);
     position: absolute;
     top: 140px;
@@ -272,7 +270,7 @@ header {
 
 .opacityChairMargarita {
     height: 60px;
-    width: 90%;
+    width: 100%;
     background: rgba(255, 255, 255, 0.4);
     position: absolute;
     top: 140px;
@@ -315,9 +313,17 @@ header {
 /* section prices */
 
 .prices {
-    height: 600px;
+    height: 750px;
     width: 100%;
-    background-color: lightgray;
+    background-color: #F1F1F1;
+    padding-top: 30px;
+}
+
+#headline {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: grey;
+    padding-bottom: 40px;
 }
 
 #headline:after {
@@ -330,17 +336,15 @@ header {
 
 .planOption {
     display: flex;
-    justify-content: space-around;
-    height: 500px;
+    justify-content: space-between;
+    height: 580px;
     margin: 30px 0;
 }
 
 .basicPlan {
-    width: 32%;
-    border: 2px solid grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 31.5%;
+    border: 2px solid #B9B8BA;
+    ;
     text-align: center;
     position: relative;
     background-color: white;
@@ -348,28 +352,32 @@ header {
 
 .basicPlan:before {
     content: "";
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
-    border: 1px solid green;
+    border: 1px solid #B9B8BA;
+    background-color: #B9B8BA;
     position: absolute;
-    left: 50px;
-    top: 0;
+    left: 155px;
+    top: -20px;
+    z-index: 2;
 }
 
 .basicPlan:after {
     content: "";
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
-    border: 1px solid green;
+    border: 2px solid #B9B8BA;
+    background-color: white;
     position: absolute;
-    left: 100px;
-    top: 0;
+    left: 139px;
+    top: -35px;
+    z-index: 1;
 }
 
 .standardPlan {
-    width: 32%;
+    width: 31.5%;
     border: 2px solid #27c7ab;
     text-align: center;
     position: relative;
@@ -378,29 +386,34 @@ header {
 
 .standardPlan:before {
     content: "";
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
-    border: 1px solid green;
+    border: 1px solid transparent;
+    background-color: white;
     position: absolute;
-    left: 50px;
-    top: 0;
+    left: 155px;
+    top: -20px;
+    z-index: 2;
 }
 
 .standardPlan:after {
     content: "";
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
-    border: 1px solid green;
+    border: 2px solid #27c7ab;
+    background-color: #27c7ab;
     position: absolute;
-    left: 100px;
-    top: 0;
+    left: 139px;
+    top: -35px;
+    z-index: 1;
 }
 
 .advancedPlan {
-    width: 32%;
-    border: 2px solid grey;
+    width: 31.5%;
+    border: 2px solid #B9B8BA;
+    ;
     text-align: center;
     position: relative;
     background-color: white;
@@ -408,41 +421,52 @@ header {
 
 .advancedPlan:before {
     content: "";
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
-    border: 1px solid green;
+    border: 1px solid #B9B8BA;
+    background-color: #B9B8BA;
     position: absolute;
-    left: 50px;
-    top: 0;
+    left: 155px;
+    top: -20px;
+    z-index: 2;
 }
 
 .advancedPlan:after {
     content: "";
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
-    border: 1px solid green;
+    border: 2px solid #B9B8BA;
+    background-color: white;
     position: absolute;
-    left: 100px;
-    top: 0;
+    left: 139px;
+    top: -35px;
+    z-index: 1;
 }
 
-.priceOption:after {
-    content: "99";
-    position: absolute;
-    font-size: 10px;
-}
-
-.priceOption:before {
+.basicPlan .priceOption:before,
+.advancedPlan .priceOption:before {
     content: "";
-    height: 80px;
-    width: 80px;
+    height: 115px;
+    width: 115px;
     border-radius: 50%;
-    border: 1px solid yellow;
+    border: 2px solid #B9B8BA;
     position: absolute;
-    left: 100px;
-    top: 0;
+    left: 115px;
+    top: 0px;
+}
+
+.standardPlan .priceOption:before {
+    content: "";
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    position: absolute;
+    left: 115px;
+    top: 0px;
+    background-color: white;
 }
 
 .headlineOption {
@@ -452,31 +476,32 @@ header {
 .priceOption {
     height: 30%;
     position: relative;
+    padding-top: 30px;
 }
 
-.basicPlan h1,
-.advancedPlan h1 {
+.basicPlan .headlineOption,
+.advancedPlan .headlineOption {
     text-transform: uppercase;
     color: #27c7ab;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
-    margin-top: 30px;
+    padding: 40px 0;
 }
 
-.standardPlan h1 {
+.standardPlan .headlineOption {
     text-transform: uppercase;
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
-    margin-top: 30px
+    padding: 40px 0;
 }
 
 .basicPlan .firstOption,
 .advancedPlan .firstOption {
     height: 10%;
-    background-color: gray;
+    background-color: #e4e4e4;
     font-size: 24px;
-    color: rgb(104, 100, 100);
+    color: #B9B8BA;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -486,7 +511,7 @@ header {
     height: 10%;
     background-color: white;
     font-size: 24px;
-    color: rgb(104, 100, 100);
+    color: #B9B8BA;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -494,18 +519,19 @@ header {
 
 .secondOption {
     height: 10%;
-    background-color: lightgray;
+    background-color: #F1F1F1;
     font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(147, 146, 148);
 }
 
 .standardPlan .thirdOption {
     height: 10%;
     background-color: white;
     font-size: 24px;
-    color: rgb(104, 100, 100);
+    color: #B9B8BA;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -513,9 +539,9 @@ header {
 
 .advancedPlan .thirdOption {
     height: 10%;
-    background-color: gray;
+    background-color: #e4e4e4;
     font-size: 24px;
-    color: rgb(104, 100, 100);
+    color: #B9B8BA;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -523,11 +549,12 @@ header {
 
 .fourthOption {
     height: 10%;
-    background-color: lightgray;
+    background-color: #F1F1F1;
     font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(147, 146, 148);
 }
 
 .basicPlan .buttonOption {
@@ -547,6 +574,7 @@ header {
 
 .buttonOption {
     display: flex;
+    color: rgba(255, 255, 255, 0.4);
     align-items: flex-end;
     justify-content: center;
 }
@@ -578,23 +606,87 @@ header {
     cursor: pointer;
 }
 
+.basicPlan .priceOption h1,
+.advancedPlan .priceOption h1 {
+    color: #B9B8BA;
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+.standardPlan .priceOption h1 {
+    color: #27c7ab;
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+.basicPlan .priceOption h2,
+.advancedPlan .priceOption h2 {
+    font-size: 14px;
+    font-weight: 900;
+    color: #B9B8BA;
+}
+
+.standardPlan .priceOption h2 {
+    font-size: 14px;
+    font-weight: 900;
+    color: #27c7ab;
+}
+
+.basicPlan .priceOption:after {
+    content: "99";
+    position: absolute;
+    font-size: 10px;
+    top: 30px;
+    left: 195px;
+    font-size: 14px;
+    color: #B9B8BA;
+    font-weight: 900;
+}
+
+.standardPlan .priceOption:after {
+    content: "99";
+    position: absolute;
+    font-size: 10px;
+    top: 30px;
+    left: 195px;
+    font-size: 14px;
+    color: #27c7ab;
+    font-weight: 900;
+}
+
+.advancedPlan .priceOption:after {
+    content: "00";
+    position: absolute;
+    font-size: 10px;
+    top: 30px;
+    left: 195px;
+    font-size: 14px;
+    color: #B9B8BA;
+    font-weight: 900;
+}
+
 
 /* section chairContact */
 
 .contact {
     display: flex;
-    height: 400px;
+    height: 600px;
 }
 
 .redChair {
     background-image: url("../images/red_chair.png");
-    height: 150px;
+    height: 250px;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-top: 80px;
 }
 
 .contact h1 {
     text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 22px;
+    color: grey;
 }
 
 .contact h1:after {
@@ -618,14 +710,26 @@ label {
 }
 
 input {
-    width: 80.6%;
-    font-size: 20px;
-    opacity: 0.6;
+    width: 83.1%;
+    font-size: 35px;
+    opacity: 0.4;
+    border: 1px solid #27c7ab;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    line-height: 60px;
 }
 
 textarea {
-    font-size: 20px;
-    opacity: 0.6;
+    font-size: 35px;
+    opacity: 0.4;
+    border: 1px solid #27c7ab;
+    resize: none;
+    padding-left: 10px;
+    line-height: 60px;
+}
+
+form {
+    position: relative;
 }
 
 #agreeCheckbox {
@@ -637,11 +741,18 @@ textarea {
     width: 40px;
     height: 40px;
     float: left;
+    position: absolute;
+    top: 0;
+    left: -10px;
 }
 
 .class {
     padding-left: 50px;
     position: relative;
+    color: gray;
+    font-size: 20px;
+    width: 85%;
+    margin-top: 30px;
 }
 
 .class:after {
@@ -653,12 +764,26 @@ textarea {
     display: block;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: -10px;
 }
 
 label[for="send"] {
     padding-top: 50px;
     text-align: center;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #27c7ab;
+    opacity: 1;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    left: -10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 32px;
+    height: 70px;
 }
 
 
@@ -668,16 +793,33 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 60px;
+    margin-bottom: 30px;
+    color: rgb(104, 100, 100);
+}
+
+.copyright {
+    width: 38%;
+}
+
+.endParagraph {
+    width: 12%;
 }
 
 #lastParagraph {
     text-transform: uppercase;
+    font-size: 20px;
+}
+
+#lastParagraph span {
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .logos {
     display: flex;
     justify-content: space-around;
-    width: 140px;
+    width: 12%;
 }
 
 .logo1 {
@@ -685,6 +827,8 @@ footer {
     height: 30px;
     width: 30px;
     background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 10px;
 }
 
 .logo2 {
@@ -693,6 +837,7 @@ footer {
     width: 30px;
     background-size: contain;
     padding: 0 10px;
+    background-repeat: no-repeat;
 }
 
 .logo3 {
@@ -701,6 +846,7 @@ footer {
     width: 30px;
     background-size: contain;
     padding: 0 10px;
+    background-repeat: no-repeat;
 }
 
 .logo4 {
@@ -708,4 +854,5 @@ footer {
     height: 30px;
     width: 30px;
     background-size: contain;
+    background-repeat: no-repeat;
 }
