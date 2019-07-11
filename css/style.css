@@ -87,7 +87,7 @@ header {
     right: 20px;
     height: 100px;
     width: 120px;
-    display: none;
+    display: block;
     background-color: black;
     text-align: left;
     padding-left: 10px;
@@ -118,10 +118,13 @@ header {
     text-decoration: none;
 }
 
-#dropdown:hover .secondNav {
+
+/* mam problem z dropdownem w trybie hover - gdy najeżdżam myszką na pole "o firmie", dropdown się rozwija, ale nie mogę na niego najechać myszką, bo gdy tylko kursor zejdzie poniżej napisu "o firmie", dropdown znika :( Pomocy!
+
+/* #dropdown:hover .secondNav {
     display: block;
     z-index: 1;
-}
+} */
 
 
 /* section chairAndText */
@@ -457,18 +460,6 @@ header {
     top: 0px;
 }
 
-.standardPlan .priceOption:before {
-    content: "";
-    height: 115px;
-    width: 115px;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    position: absolute;
-    left: 115px;
-    top: 0px;
-    background-color: white;
-}
-
 .headlineOption {
     height: 15%;
 }
@@ -613,10 +604,38 @@ header {
     padding-bottom: 5px;
 }
 
+.standardPlan .priceOption:before {
+    content: "";
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    position: absolute;
+    left: 115px;
+    top: 0px;
+    background-color: white;
+}
+
+.standardPlan .priceOption {
+    position: relative;
+}
+
 .standardPlan .priceOption h1 {
     color: #27c7ab;
     font-size: 40px;
     padding-bottom: 5px;
+    position: absolute;
+    top: 28px;
+    left: 148px;
+}
+
+.standardPlan .priceOption h2 {
+    font-size: 14px;
+    font-weight: 900;
+    color: #27c7ab;
+    position: absolute;
+    top: 80px;
+    left: 140px;
 }
 
 .basicPlan .priceOption h2,
@@ -624,12 +643,6 @@ header {
     font-size: 14px;
     font-weight: 900;
     color: #B9B8BA;
-}
-
-.standardPlan .priceOption h2 {
-    font-size: 14px;
-    font-weight: 900;
-    color: #27c7ab;
 }
 
 .basicPlan .priceOption:after {
