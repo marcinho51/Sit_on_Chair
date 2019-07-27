@@ -39,36 +39,36 @@ header {
     padding-left: 10px;
 }
 
-.menuLeft {
+.menu__left {
     width: 30%;
 }
 
-.menuLeft h1 {
+.menu__left h1 {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 100;
 }
 
-.menuLeft span {
+.menu__left span {
     color: #27c7ab;
     font-weight: 900;
 }
 
-.menuRight {
+.menu__right {
     width: 33%;
     cursor: pointer;
 }
 
-.menuRight a {
+.menu__right a {
     text-decoration: none;
 }
 
-.firstNav {
+.menu--main-nav {
     text-transform: uppercase;
     list-style-type: none;
 }
 
-.firstNav li {
+.menu--main-nav li {
     display: inline-block;
     font-size: 14px;
     font-weight: 900;
@@ -79,7 +79,7 @@ header {
     position: relative;
 }
 
-.secondNav {
+.menu--company-nav {
     text-transform: none;
     list-style-type: none;
     position: absolute;
@@ -94,12 +94,12 @@ header {
     z-index: 1;
 }
 
-.secondNav li {
+.menu--company-nav li {
     font-size: 15px;
     padding: 10px 5px 5px 0;
 }
 
-.secondNav:after {
+.menu--company-nav:after {
     content: "";
     display: block;
     width: 0;
@@ -112,8 +112,8 @@ header {
     position: absolute;
 }
 
-.firstNav a,
-.secondNav a {
+.menu--main-nav a,
+.menu--company-nav a {
     color: white;
     text-decoration: none;
 }
@@ -121,7 +121,7 @@ header {
 
 /* mam problem z dropdownem w trybie hover - gdy najeżdżam myszką na pole "o firmie", dropdown się rozwija, ale nie mogę na niego najechać myszką, bo gdy tylko kursor zejdzie poniżej napisu "o firmie", dropdown znika :( Pomocy!
 
-/* #dropdown:hover .secondNav {
+/* #dropdown:hover .menu--company-nav {
     display: block;
     z-index: 1;
 } */
@@ -129,7 +129,7 @@ header {
 
 /* section chairAndText */
 
-.chairAndText {
+.introduction {
     margin: 60px 0 0 18px;
     display: flex;
     center justify-contencenter position: relacenter height: 450px;
@@ -143,7 +143,7 @@ header {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
 }
 
-.chairPhoto:before {
+.introduction__photo-part:before {
     content: "<";
     font-size: 80px;
     display: block;
@@ -153,7 +153,7 @@ header {
     color: #27c7ab;
 }
 
-.chairText:after {
+.introduction__text-part:after {
     content: ">";
     font-size: 80px;
     display: block;
@@ -163,7 +163,7 @@ header {
     color: #27c7ab;
 }
 
-.chairPhoto {
+.introduction__photo-part {
     background-image: url("../images/black_chair.png");
     background-repeat: no-repeat;
     background-position: cover;
@@ -174,7 +174,7 @@ header {
     margin-top: 10px;
 }
 
-.chairText {
+.introduction__text-part {
     width: 39%;
     display: flex;
     flex-direction: column;
@@ -182,13 +182,13 @@ header {
     margin-bottom: 78px;
 }
 
-.chairText span {
+.introduction__text-part span {
     color: #27c7ab;
     text-transform: uppercase;
     font-weight: 900;
 }
 
-.chairText h1 {
+.introduction__text-part h1 {
     text-transform: uppercase;
     font-size: 38px;
     text-align: center;
@@ -196,17 +196,17 @@ header {
     font-weight: 300;
 }
 
-.chairText .text {
+.introduction--text {
     width: 90%;
 }
 
-.chairText p {
+.introduction__text-part p {
     font-size: 15px;
     line-height: 22px;
     text-align: center;
 }
 
-.chairText button {
+.introduction__text-part button {
     text-transform: uppercase;
     font-size: 23px;
     color: white;
@@ -221,14 +221,14 @@ header {
 
 /* section chairOptions */
 
-.chairOptions {
+.chair-options {
     display: flex;
     justify-content: space-between;
     height: 300px;
     margin-top: 20px;
 }
 
-.chairClair {
+.chair-options__clair {
     width: 31.5%;
     height: 220px;
     background-image: url("../images/box1_img.jpg");
@@ -237,7 +237,7 @@ header {
     position: relative;
 }
 
-.chairMargarita {
+.chair-options__margarita {
     width: 31.5%;
     height: 220px;
     background-image: url("../images/box2_img.jpg");
@@ -246,15 +246,14 @@ header {
     position: relative;
 }
 
-.textFindInputs {
+.chair-options__text-part {
     width: 31.5%;
     height: 250px;
     border: 1px solid #B9B8BA;
-    ;
     padding: 15px 26px;
 }
 
-.opacityChairClair {
+.chair-options__clair--opacity {
     height: 60px;
     width: 100%;
     background: rgba(255, 255, 255, 0.4);
@@ -263,7 +262,7 @@ header {
     left: 0;
 }
 
-.opacityChairClair h2:after {
+.chair-options__clair--opacity h2:after {
     content: "";
     height: 8px;
     width: 140px;
@@ -271,7 +270,7 @@ header {
     display: block;
 }
 
-.opacityChairMargarita {
+.chair-options__margarita--opacity {
     height: 60px;
     width: 100%;
     background: rgba(255, 255, 255, 0.4);
@@ -280,7 +279,7 @@ header {
     left: 0;
 }
 
-.opacityChairMargarita h2:after {
+.chair-options__margarita--opacity h2:after {
     content: "";
     height: 8px;
     width: 140px;
@@ -288,7 +287,7 @@ header {
     display: block;
 }
 
-.textFindInputs h2:after {
+.chair-options__text-part h2:after {
     content: "";
     height: 8px;
     width: 140px;
@@ -296,17 +295,17 @@ header {
     display: block;
 }
 
-.chairOptions span {
+.chair-options span {
     text-transform: uppercase;
 }
 
-.chairOptions h2 {
+.chair-options h2 {
     font-size: 16px;
     padding-bottom: 5px;
     margin-top: 10px;
 }
 
-.chairOptions p {
+.chair-options p {
     padding: 10px 0;
     font-size: 15px;
     color: rgb(104, 100, 100);
@@ -322,14 +321,14 @@ header {
     padding-top: 30px;
 }
 
-#headline {
+#prices-headline {
     text-transform: uppercase;
     font-size: 22px;
     color: grey;
     padding-bottom: 40px;
 }
 
-#headline:after {
+#prices-headline:after {
     content: "";
     height: 7px;
     width: 300px;
@@ -337,14 +336,14 @@ header {
     display: block;
 }
 
-.planOption {
+#plan-options {
     display: flex;
     justify-content: space-between;
     height: 580px;
     margin: 30px 0;
 }
 
-.basicPlan {
+.prices__basic {
     width: 31.5%;
     border: 2px solid #B9B8BA;
     ;
@@ -353,7 +352,7 @@ header {
     background-color: white;
 }
 
-.basicPlan:before {
+.prices__basic:before {
     content: "";
     height: 30px;
     width: 30px;
@@ -366,7 +365,7 @@ header {
     z-index: 2;
 }
 
-.basicPlan:after {
+.prices__basic:after {
     content: "";
     height: 60px;
     width: 60px;
@@ -379,7 +378,7 @@ header {
     z-index: 1;
 }
 
-.standardPlan {
+.prices__standard {
     width: 31.5%;
     border: 2px solid #27c7ab;
     text-align: center;
@@ -387,7 +386,7 @@ header {
     background-color: #27c7ab;
 }
 
-.standardPlan:before {
+.prices__standard:before {
     content: "";
     height: 30px;
     width: 30px;
@@ -400,7 +399,7 @@ header {
     z-index: 2;
 }
 
-.standardPlan:after {
+.prices__standard:after {
     content: "";
     height: 60px;
     width: 60px;
@@ -413,7 +412,7 @@ header {
     z-index: 1;
 }
 
-.advancedPlan {
+.prices__advanced {
     width: 31.5%;
     border: 2px solid #B9B8BA;
     ;
@@ -422,7 +421,7 @@ header {
     background-color: white;
 }
 
-.advancedPlan:before {
+.prices__advanced:before {
     content: "";
     height: 30px;
     width: 30px;
@@ -435,7 +434,7 @@ header {
     z-index: 2;
 }
 
-.advancedPlan:after {
+.prices__advanced:after {
     content: "";
     height: 60px;
     width: 60px;
@@ -448,8 +447,8 @@ header {
     z-index: 1;
 }
 
-.basicPlan .priceOption:before,
-.advancedPlan .priceOption:before {
+.prices__basic--monthly-price:before,
+.prices__advanced--monthly-price:before {
     content: "";
     height: 115px;
     width: 115px;
@@ -460,18 +459,18 @@ header {
     top: 0px;
 }
 
-.headlineOption {
+.headline-option {
     height: 15%;
 }
 
-.priceOption {
+.monthly-price-option {
     height: 30%;
     position: relative;
     padding-top: 30px;
 }
 
-.basicPlan .headlineOption,
-.advancedPlan .headlineOption {
+.prices__basic--headline,
+.prices__advanced--headline {
     text-transform: uppercase;
     color: #27c7ab;
     font-size: 22px;
@@ -479,7 +478,7 @@ header {
     padding: 40px 0;
 }
 
-.standardPlan .headlineOption {
+.prices__standard--headline {
     text-transform: uppercase;
     color: white;
     font-size: 22px;
@@ -487,8 +486,8 @@ header {
     padding: 40px 0;
 }
 
-.basicPlan .firstOption,
-.advancedPlan .firstOption {
+.prices__basic--first-advantage,
+.prices__advanced--first-advantage {
     height: 10%;
     background-color: #e4e4e4;
     font-size: 24px;
@@ -498,7 +497,7 @@ header {
     justify-content: center;
 }
 
-.standardPlan .firstOption {
+.prices__standard--first-advantage {
     height: 10%;
     background-color: white;
     font-size: 24px;
@@ -508,7 +507,7 @@ header {
     justify-content: center;
 }
 
-.secondOption {
+.second-advantage {
     height: 10%;
     background-color: #F1F1F1;
     font-size: 24px;
@@ -518,7 +517,7 @@ header {
     color: rgb(147, 146, 148);
 }
 
-.standardPlan .thirdOption {
+.prices__standard--third-advantage {
     height: 10%;
     background-color: white;
     font-size: 24px;
@@ -528,7 +527,7 @@ header {
     justify-content: center;
 }
 
-.advancedPlan .thirdOption {
+.prices__advanced--third-advantage {
     height: 10%;
     background-color: #e4e4e4;
     font-size: 24px;
@@ -538,7 +537,7 @@ header {
     justify-content: center;
 }
 
-.fourthOption {
+.prices__advanced--fourth-advantage {
     height: 10%;
     background-color: #F1F1F1;
     font-size: 24px;
@@ -548,29 +547,29 @@ header {
     color: rgb(147, 146, 148);
 }
 
-.basicPlan .buttonOption {
+.prices__basic--button {
     height: 35%;
     background-color: white;
 }
 
-.standardPlan .buttonOption {
+.prices__standard--button {
     height: 25%;
     background-color: #27c7ab;
 }
 
-.advancedPlan .buttonOption {
+.prices__advanced--button {
     height: 15%;
     background-color: white;
 }
 
-.buttonOption {
+.prices--button {
     display: flex;
     color: rgba(255, 255, 255, 0.4);
     align-items: flex-end;
     justify-content: center;
 }
 
-.standardPlan .buttonOption button {
+.prices__standard--button button {
     width: 115px;
     height: 35px;
     background-color: white;
@@ -583,8 +582,8 @@ header {
     cursor: pointer;
 }
 
-.basicPlan .buttonOption button,
-.advancedPlan .buttonOption button {
+.prices__basic--button button,
+.prices__advanced--button button {
     width: 115px;
     height: 35px;
     background-color: #27c7ab;
@@ -597,14 +596,14 @@ header {
     cursor: pointer;
 }
 
-.basicPlan .priceOption h1,
-.advancedPlan .priceOption h1 {
+.prices__basic--monthly-price h1,
+.prices__advanced--monthly-price h1 {
     color: #B9B8BA;
     font-size: 40px;
     padding-bottom: 5px;
 }
 
-.standardPlan .priceOption:before {
+.prices__standard--monthly-price:before {
     content: "";
     height: 115px;
     width: 115px;
@@ -616,11 +615,11 @@ header {
     background-color: white;
 }
 
-.standardPlan .priceOption {
+.prices__standard--monthly-price {
     position: relative;
 }
 
-.standardPlan .priceOption h1 {
+.prices__standard--monthly-price h1 {
     color: #27c7ab;
     font-size: 40px;
     padding-bottom: 5px;
@@ -629,7 +628,7 @@ header {
     left: 148px;
 }
 
-.standardPlan .priceOption h2 {
+.prices__standard--monthly-price h2 {
     font-size: 14px;
     font-weight: 900;
     color: #27c7ab;
@@ -638,14 +637,14 @@ header {
     left: 140px;
 }
 
-.basicPlan .priceOption h2,
-.advancedPlan .priceOption h2 {
+.prices__basic--monthly-price h2,
+.prices__advanced--monthly-price h2 {
     font-size: 14px;
     font-weight: 900;
     color: #B9B8BA;
 }
 
-.basicPlan .priceOption:after {
+.prices__basic--monthly-price:after {
     content: "99";
     position: absolute;
     font-size: 10px;
@@ -656,7 +655,7 @@ header {
     font-weight: 900;
 }
 
-.standardPlan .priceOption:after {
+.prices__standard--monthly-price:after {
     content: "99";
     position: absolute;
     font-size: 10px;
@@ -667,7 +666,7 @@ header {
     font-weight: 900;
 }
 
-.advancedPlan .priceOption:after {
+.prices__advanced--monthly-price:after {
     content: "00";
     position: absolute;
     font-size: 10px;
@@ -686,7 +685,7 @@ header {
     height: 600px;
 }
 
-.redChair {
+.contact__form2--red-chair {
     background-image: url("../images/red_chair.png");
     height: 250px;
     background-size: contain;
@@ -710,11 +709,11 @@ header {
     display: block;
 }
 
-.form1 {
+.contact__form1 {
     width: 60%;
 }
 
-.form2 {
+.contact__form2 {
     width: 40%;
 }
 
@@ -749,7 +748,7 @@ form {
     display: none;
 }
 
-.checker {
+.contact__form2--checker {
     background-image: url("../images/form_ok.jpg");
     width: 40px;
     height: 40px;
@@ -759,7 +758,7 @@ form {
     left: -10px;
 }
 
-.class {
+.contact__form2--agree-checkbox {
     padding-left: 50px;
     position: relative;
     color: gray;
@@ -768,7 +767,7 @@ form {
     margin-top: 30px;
 }
 
-.class:after {
+.contact__form2--agree-checkbox:after {
     clear: both;
     content: "";
     width: 45px;
@@ -811,11 +810,11 @@ footer {
     color: rgb(104, 100, 100);
 }
 
-.copyright {
+.footer__copyright {
     width: 38%;
 }
 
-.endParagraph {
+.footer__end-text {
     width: 12%;
 }
 
@@ -829,13 +828,13 @@ footer {
     font-weight: 900;
 }
 
-.logos {
+.footer__logos {
     display: flex;
     justify-content: space-around;
     width: 12%;
 }
 
-.logo1 {
+.footer--logo1 {
     background-image: url("../images/flickr.png");
     height: 30px;
     width: 30px;
@@ -844,7 +843,7 @@ footer {
     padding: 0 10px;
 }
 
-.logo2 {
+.footer--logo2 {
     background-image: url("../images/vimeo.png");
     height: 30px;
     width: 30px;
@@ -853,7 +852,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-.logo3 {
+.footer--logo3 {
     background-image: url("../images/pinterest.png");
     height: 30px;
     width: 30px;
@@ -862,7 +861,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-.logo4 {
+.footer--logo4 {
     background-image: url("../images/twitter.png");
     height: 30px;
     width: 30px;

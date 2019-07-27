@@ -13,15 +13,15 @@
     <header>
         <div class="menu container">
 
-            <div class="menuLeft">
+            <div class="menu__left">
                 <h1>Sit <span>on</span> chair</h1>
             </div>
-            <div class="menuRight">
+            <div class="menu__right">
                 <nav>
-                    <ul class="firstNav">
+                    <ul class="menu--main-nav">
                         <li id="dropdown"><a href="#">O firmie</a>
 
-                            <ul class="secondNav">
+                            <ul class="menu--company-nav">
                                 <li><a href="#">Aktualności</a></li>
                                 <li><a href="#">Nasz team</a></li>
                                 <li><a href="#">Historia</a></li>
@@ -37,13 +37,13 @@
 
     </header>
 
-    <section class="chairAndText">
-        <article class="chairPhoto">
+    <section class="introduction">
+        <article class="introduction__photo-part">
 
         </article>
-        <article class="chairText">
+        <article class="introduction__text-part">
             <h1>Sit <span>on</span> our <span>chair</span></h1>
-            <div class="text">
+            <div class="introduction--text">
                 <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</p>
             </div>
             <div>
@@ -52,21 +52,21 @@
         </article>
     </section>
 
-    <section class="chairOptions container">
+    <section class="chair-options container">
 
-        <article class="chairClair">
-            <div class="opacityChairClair">
+        <article class="chair-options__clair">
+            <div class="chair-options__clair--opacity">
                 <h2>Chair <span>Clair</span></h2>
             </div>
         </article>
 
-        <article class="chairMargarita">
-            <div class="opacityChairMargarita">
+        <article class="chair-options__margarita">
+            <div class="chair-options__margarita--opacity">
                 <h2>Chair <span>Margarita</span></h2>
             </div>
         </article>
 
-        <article class="textFindInputs">
+        <article class="chair-options__text-part">
             <div>
                 <h2>Finds all inputs</h2>
                 <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.</p>
@@ -78,68 +78,68 @@
 
     <section class="prices">
         <div class="container">
-            <h1 id="headline">Cennik</h1>
-            <div class="planOption">
-                <article class="basicPlan">
-                    <div class="headlineOption">
+            <h1 id="prices-headline">Cennik</h1>
+            <div id="plan-options">
+                <article class="prices__basic">
+                    <div class="prices__basic--headline headline-option">
                         <h1>Basic plan</h1>
                     </div>
-                    <div class="priceOption">
+                    <div class="prices__basic--monthly-price monthly-price-option">
                         <h1>85</h1>
                         <h2>PLN/MSC</h2>
                     </div>
-                    <div class="firstOption">
+                    <div class="prices__basic--first-advantage">
                         <p>Zakup towaru + dowóz</p>
                     </div>
-                    <div class="secondOption">
+                    <div class="prices__basic--second-advantage second-advantage">
                         <p>Serwis</p>
                     </div>
-                    <div class="buttonOption">
+                    <div class="prices__basic--button prices--button">
                         <button>Dołącz</button>
                     </div>
                 </article>
-                <article class="standardPlan">
-                    <div class="headlineOption">
+                <article class="prices__standard">
+                    <div class="prices__standard--headline headline-option">
                         <h1>Standard plan</h1>
                     </div>
-                    <div class="priceOption">
+                    <div class="prices__standard--monthly-price monthly-price-option">
                         <h1>95</h1>
                         <h2>PLN/MSC</h2>
                     </div>
-                    <div class="firstOption">
+                    <div class="prices__standard--first-advantage">
                         <p>Zakup towaru + dowóz</p>
                     </div>
-                    <div class="secondOption">
+                    <div class="prices__standard--second-advantage second-advantage">
                         <p>Serwis</p>
                     </div>
-                    <div class="thirdOption">
+                    <div class="prices__standard--third-advantage">
                         <p>Gwarancja 5 lat</p>
                     </div>
-                    <div class="buttonOption">
+                    <div class="prices__standard--button prices--button">
                         <button>Dołącz</button>
                     </div>
                 </article>
-                <article class="advancedPlan">
-                    <div class="headlineOption">
+                <article class="prices__advanced">
+                    <div class="prices__advanced--headline headline-option">
                         <h1>Advanced plan</h1>
                     </div>
-                    <div class="priceOption">
+                    <div class="prices__advanced--monthly-price monthly-price-option">
                         <h1>211</h1>
                         <h2>PLN/MSC</h2>
                     </div>
-                    <div class="firstOption">
+                    <div class="prices__advanced--first-advantage">
                         <p>Zakup towaru + dowóz</p>
                     </div>
-                    <div class="secondOption">
+                    <div class="prices__advanced--second-advantage second-advantage">
                         <p>Serwis</p>
                     </div>
-                    <div class="thirdOption">
+                    <div class="prices__advanced--third-advantage">
                         <p>Gwarancja 6 lat</p>
                     </div>
-                    <div class="fourthOption">
+                    <div class="prices__advanced--fourth-advantage">
                         <p>Porady projektanta</p>
                     </div>
-                    <div class="buttonOption">
+                    <div class="prices__advanced--button prices--button">
                         <button>Dołącz</button>
                     </div>
                 </article>
@@ -149,7 +149,7 @@
 
     <section class="contact container">
 
-        <div class="form1">
+        <div class="contact__form1">
             <h1>Kontakt</h1>
 
             <form action="#">
@@ -162,11 +162,11 @@
                 <textarea name="message" id="" cols="29" rows="4" placeholder="Wiadomość"></textarea>
             </form>
         </div>
-        <div class="form2">
-            <div class="redChair"></div>
+        <div class="contact__form2">
+            <div class="contact__form2--red-chair"></div>
             <form action="#">
-                <label for="agreeCheckbox" class="checker"></label>
-                <div class="class">
+                <label for="agreeCheckbox" class="contact__form2--checker"></label>
+                <div class="contact__form2--agree-checkbox">
                     <input type="checkbox" id="agreeCheckbox">Zgadzam się na przetwarzanie danych osobowych
                 </div>
                 <label for="send"><input type="submit" value="Wyślij"></label>
@@ -176,16 +176,16 @@
     </section>
 
     <footer>
-        <div class="copyright">
+        <div class="footer__copyright">
             <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
         </div>
-        <div class="logos">
-            <div class="logo1"></div>
-            <div class="logo2"></div>
-            <div class="logo3"></div>
-            <div class="logo4"></div>
+        <div class="footer__logos">
+            <div class="footer--logo1"></div>
+            <div class="footer--logo2"></div>
+            <div class="footer--logo3"></div>
+            <div class="footer--logo4"></div>
         </div>
-        <div class="endParagraph">
+        <div class="footer__end-text">
             <p id="lastParagraph">Sit <span>on</span> chair</p>
         </div>
     </footer>
