@@ -87,7 +87,7 @@ header {
     right: 20px;
     height: 100px;
     width: 120px;
-    display: block;
+    display: none;
     background-color: black;
     text-align: left;
     padding-left: 10px;
@@ -107,9 +107,10 @@ header {
     border-bottom: 10px solid black;
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
-    top: -8px;
+    top: -26px;
     left: 50px;
     position: absolute;
+    padding-top: 20px;
 }
 
 .menu--main-nav a,
@@ -118,13 +119,10 @@ header {
     text-decoration: none;
 }
 
-
-/* mam problem z dropdownem w trybie hover - gdy najeżdżam myszką na pole "o firmie", dropdown się rozwija, ale nie mogę na niego najechać myszką, bo gdy tylko kursor zejdzie poniżej napisu "o firmie", dropdown znika :( Pomocy!
-
-/* #dropdown:hover .menu--company-nav {
+#dropdown:hover .menu--company-nav {
     display: block;
     z-index: 1;
-} */
+}
 
 
 /* section chairAndText */
