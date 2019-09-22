@@ -44,8 +44,10 @@ next.on('click', () => {
 
 const arrow = $('.list_arrow');
 
-// let zeroCalculator = parseInt($('.sum strong').text());
-// zeroCalculator = 0;
+
+$('.sum strong').text(0);
+let zeroCalculator = Number($('.sum strong').text());
+zeroCalculator = 0;
 
 arrow.on('click', e => {
     if ($(e.target).next().css("display") === "none") {
@@ -57,76 +59,65 @@ arrow.on('click', e => {
                     {
                         $('.title').text($(e.target).text());
                         $('.title.value').text(500);
-                        // zeroCalculator += 500;
+                        zeroCalculator += 500;
                         break;
                     }
                 case "Margarita":
                     {
                         $('.title').text($(e.target).text());
                         $('.title.value').text(400);
-                        // zeroCalculator += 400;
+                        zeroCalculator += 400;
                         break;
                     }
                 case "Selena":
                     {
                         $('.title').text($(e.target).text());
                         $('.title.value').text(300);
-                        // zeroCalculator += 300;
+                        zeroCalculator += 300;
                         break;
                     }
                 case "Czerwony":
                     {
                         $('.color').text($(e.target).text());
                         $('.color.value').text(90);
-                        // zeroCalculator += 90;
+                        zeroCalculator += 90;
                         break;
                     }
                 case "Czarny":
                     {
                         $('.color').text($(e.target).text());
                         $('.color.value').text(80);
-                        // zeroCalculator += 80;
+                        zeroCalculator += 80;
                         break;
                     }
                 case "Pomarańczowy":
                     {
                         $('.color').text($(e.target).text());
                         $('.color.value').text(70);
-                        // zeroCalculator += 70;
+                        zeroCalculator += 70;
                         break;
                     }
                 case "Tkanina":
                     {
                         $('.pattern').text($(e.target).text());
                         $('.pattern.value').text(100);
-                        // zeroCalculator += 100;
+                        zeroCalculator += 100;
                         break;
                     }
                 case "Skóra":
                     {
                         $('.pattern').text($(e.target).text());
                         $('.pattern.value').text(200);
-                        // zeroCalculator += 200;
+                        zeroCalculator += 200;
                         break;
                     }
             }
-            let titleValue = parseInt($('.title.value').text());
-            if (titleValue === NaN) {
-                titleValue = 0;
-            }
-            let colorValue = parseInt($('.color.value').text())
-            if (colorValue === NaN) {
-                colorValue = 0;
-            }
-            let patternValue = parseInt($('.pattern.value').text());
-            if (patternValue === NaN) {
-                patternValue = 0;
-            }
-            let transportValue = parseInt($('.transport.value').text())
-            if (transportValue === NaN) {
-                transportValue = 0;
-            }
-            let allValue = titleValue + colorValue + patternValue + transportValue;
+            const titleValue = Number($('.title.value').text());
+            const colorValue = Number($('.color.value').text())
+            const patternValue = Number($('.pattern.value').text());
+            const transportValue = Number($('.transport.value').text())
+
+            const allValue = titleValue + colorValue + patternValue + transportValue;
             console.log(allValue);
             $('.sum strong').text(allValue);
             $(e.target).parent().css("display", "none");
