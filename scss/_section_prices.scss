@@ -1,0 +1,167 @@
+.prices {
+    background-color: #F1F1F1;
+    height: 46rem;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 2rem;
+    .container {
+        #prices-headline {
+            color: $colorGrey;
+            font-size: 1.4rem;
+            padding-bottom: 2.5rem;
+            text-transform: uppercase;
+            &:after {
+                background-color: $colorBlue;
+                content: "";
+                display: block;
+                height: 0.5rem;
+                width: 19rem;
+            }
+        }
+        #plan-options.row {
+            height: 36rem;
+            justify-content: space-between;
+            .prices__basic {
+                background-color: $floralWhite;
+                border: 2px solid $colorLightGrey;
+                margin-top: 1rem;
+                position: relative;
+                text-align: center;
+                width: 32%;
+                &:before {
+                    @include top-inner-circle;
+                }
+                &:after {
+                    @include top-outer-circle;
+                }
+                .headline-option {
+                    @include headline-option;
+                    h1 {
+                        color: $colorBlue;
+                    }
+                }
+                .monthly-price-option {
+                    @include monthly-price-option;
+                }
+                .first-advantage {
+                    @include first-advantage;
+                }
+                .second-advantage {
+                    @include second-advantage;
+                }
+                .prices--button {
+                    @include prices-button;
+                    height: 35%;
+                }
+            }
+            .prices__standard {
+                background-color: $colorBlue;
+                border: 2px solid $colorBlue;
+                margin-top: 1rem;
+                position: relative;
+                text-align: center;
+                width: 32%;
+                &:before {
+                    @include top-inner-circle;
+                    background-color: $colorWhite;
+                    border: 1px solid $colorWhite;
+                }
+                &:after {
+                    @include top-outer-circle;
+                    background-color: $colorBlue;
+                    border: 2px solid $colorBlue;
+                }
+                .headline-option {
+                    @include headline-option;
+                    h1 {
+                        color: $colorWhite;
+                    }
+                }
+                .monthly-price-option {
+                    @include monthly-price-option-adv;
+                }
+                .first-advantage {
+                    @include first-advantage;
+                    background-color: $colorWhite;
+                }
+                .second-advantage {
+                    @include second-advantage;
+                }
+                .third-advantage {
+                    background-color: $colorWhite;
+                    color: $colorLightGrey;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 10%;
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+                .prices--button {
+                    @include prices-button;
+                    height: 25%;
+                    button {
+                        background-color: $colorWhite;
+                        color: $colorBlue;
+                    }
+                }
+            }
+            .prices__advanced {
+                background-color: $floralWhite;
+                border: 2px solid $colorLightGrey;
+                margin-top: 1rem;
+                position: relative;
+                text-align: center;
+                width: 32%;
+                &:before {
+                    @include top-inner-circle;
+                }
+                &:after {
+                    @include top-outer-circle;
+                }
+                .headline-option {
+                    @include headline-option;
+                    h1 {
+                        color: $colorBlue;
+                    }
+                }
+                .monthly-price-option {
+                    @include monthly-price-option;
+                }
+                .first-advantage {
+                    @include first-advantage;
+                }
+                .second-advantage {
+                    @include second-advantage;
+                }
+                .third-advantage {
+                    background-color: $colorBgFirstThirdAdvantage;
+                    color: $colorLightGrey;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 10%;
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+                .fourth-advantage {
+                    background-color: $colorBgSecondFourthAdvantage;
+                    color: $colorLightGrey;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 10%;
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+                .prices--button {
+                    @include prices-button;
+                    height: 15%;
+                }
+            }
+        }
+    }
+}

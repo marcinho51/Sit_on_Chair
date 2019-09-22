@@ -1,0 +1,70 @@
+.introduction {
+    height: 30rem;
+    margin-top: 3rem;
+    max-width: 100%;
+    .col-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .introduction--left-wing {
+            color: $colorBlue;
+            font-size: 5rem;
+            padding-left: 0.5rem;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .introduction--right-wing {
+            color: $colorBlue;
+            font-size: 5rem;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .introduction__photo-part {
+        ul {
+            height: 20rem;
+            list-style: none;
+            width: 100%;
+            li {
+                display: none;
+            }
+        }
+        .visible {
+            display: inline-block;
+        }
+    }
+    .introduction__text-part {
+        h1 {
+            font-size: 2.5rem;
+            padding: 4rem 3rem 2rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            span {
+                color: $colorBlue;
+                font-size: 2.5rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+        .introduction--text {
+            width: 90%;
+            p {
+                line-height: 1.4rem;
+                text-align: center;
+            }
+        }
+        button {
+            background-color: $colorBlue;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            color: $colorWhite;
+            font-size: 1.5rem;
+            height: 3rem;
+            margin: 2rem 0 0 7rem;
+            text-transform: uppercase;
+            width: 16rem;
+        }
+    }
+}

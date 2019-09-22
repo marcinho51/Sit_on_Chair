@@ -1,0 +1,76 @@
+header {
+    background-color: $colorBlack;
+    color: $colorWhite;
+    height: 3rem;
+    max-width: 100%;
+    padding-top: 1rem;
+    .row {
+        .menu__left {
+            text-transform: uppercase;
+            h1 {
+                color: $colorWhite;
+                span {
+                    color: $colorBlue;
+                    font-weight: 700;
+                }
+            }
+        }
+        .menu__right {
+            .menu--main-nav {
+                display: flex;
+                justify-content: flex-end;
+                list-style-type: none;
+                text-transform: uppercase;
+                #dropdown {
+                    position: relative;
+                    &:hover .menu--company-nav {
+                        display: block;
+                    }
+                }
+                #last-menu--company-nav {
+                    padding-right: 0;
+                }
+                li {
+                    display: inline-block;
+                    font-weight: 700;
+                    padding-right: 3.5rem;
+                    a {
+                        color: $colorWhite;
+                        font-size: 0.8rem;
+                        &:hover {
+                            color: $colorBlue;
+                        }
+                    }
+                    .menu--company-nav {
+                        background-color: $colorBlack;
+                        display: none;
+                        height: 6.5rem;
+                        padding-left: 1rem;
+                        position: absolute;
+                        top: 2.5rem;
+                        left: -1.3rem;
+                        text-align: left;
+                        text-transform: none;
+                        width: 6.5rem;
+                        &:after {
+                            border-bottom: 10px solid $colorBlack;
+                            border-right: 10px solid transparent;
+                            border-left: 10px solid transparent;
+                            content: "";
+                            display: block;
+                            height: 0;
+                            padding-top: 1.6rem;
+                            position: absolute;
+                            top: -2.2rem;
+                            left: 2.6rem;
+                            width: 0;
+                        }
+                        li {
+                            padding: 0.6rem 0.4rem 0.4rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

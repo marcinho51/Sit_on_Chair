@@ -1,0 +1,183 @@
+// section-chair-options
+@mixin h2-chair-options {
+    margin-top: 0.6rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    &:after {
+        background-color: $colorBlue;
+        content: "";
+        display: block;
+        height: 0.5rem;
+        width: 9rem;
+    }
+}
+
+// section-prices
+@mixin headline-option {
+    font-size: 1.4rem;
+    font-weight: 600;
+    height: 15%;
+    padding: 2.5rem 0;
+    text-transform: uppercase;
+    h1 {
+        color: $colorLightGrey;
+        font-size: 1.5rem;
+        padding-bottom: 0.3rem;
+    }
+}
+
+@mixin monthly-price-option {
+    height: 30%;
+    padding-top: 2rem;
+    position: relative;
+    .prices--circle {
+        background-color: $colorWhite;
+        border: 1px solid $colorLightGrey;
+        border-radius: 50%;
+        height: 8.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8.5rem;
+        h1 {
+            color: $colorLightGrey;
+            font-size: 2.5rem;
+            padding-bottom: 0.4rem;
+            padding-top: 1.5rem;
+            position: relative;
+            &:after {
+                color: $colorLightGrey;
+                content: "99";
+                font-size: 0.8rem;
+                font-weight: 700;
+                position: absolute;
+                top: 40%;
+                right: 13%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        h2 {
+            color: $colorLightGrey;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+    }
+}
+
+@mixin monthly-price-option-adv {
+    height: 30%;
+    padding-top: 2rem;
+    position: relative;
+    .prices--circle {
+        background-color: $colorWhite;
+        border: 1px solid $colorBlue;
+        border-radius: 50%;
+        height: 8.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8.5rem;
+        h1 {
+            color: $colorBlue;
+            font-size: 2.5rem;
+            padding-bottom: 0.4rem;
+            padding-top: 1.5rem;
+            position: relative;
+            &:after {
+                color: $colorBlue;
+                content: "99";
+                font-size: 0.8rem;
+                font-weight: 700;
+                position: absolute;
+                top: 40%;
+                right: 13%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        h2 {
+            color: $colorBlue;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+    }
+}
+
+@mixin first-advantage {
+    background-color: $colorBgFirstThirdAdvantage;
+    color: $colorLightGrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@mixin second-advantage {
+    background-color: $colorBgSecondFourthAdvantage;
+    color: $colorLightGrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@mixin prices-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    button {
+        background-color: $colorBlue;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        color: $colorWhite;
+        cursor: pointer;
+        height: 2.2rem;
+        margin-bottom: 1.25rem;
+        text-transform: uppercase;
+        width: 7rem;
+    }
+}
+
+@mixin top-inner-circle {
+    background-color: $colorLightGrey;
+    border-radius: 50%;
+    border: 1px solid $colorLightGrey;
+    content: "";
+    height: 1.5rem;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.5rem;
+    z-index: 2;
+}
+
+@mixin top-outer-circle {
+    background-color: $colorWhite;
+    border-radius: 50%;
+    border: 2px solid $colorLightGrey;
+    content: "";
+    height: 3rem;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3rem;
+    z-index: 1;
+}
+
+// footer
+@mixin footer-logos {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 2rem;
+    padding: 0 0.6rem;
+    width: 2rem;
+}

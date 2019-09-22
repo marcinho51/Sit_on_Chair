@@ -1,0 +1,14 @@
+$n: 12;
+.row {
+    display: flex;
+    flex-flow: wrap;
+    margin: -1rem 0 0 -1rem;
+}
+
+@for $i from 1 through $n {
+    .col-#{$i} {
+        margin-top: 1rem;
+        padding-left: 1rem;
+        width: ($i / $n) * 100%;
+    }
+}
