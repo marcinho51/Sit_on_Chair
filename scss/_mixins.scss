@@ -142,6 +142,10 @@
         margin-bottom: 1.25rem;
         text-transform: uppercase;
         width: 7rem;
+        &:hover {
+            width: 8rem;
+            height: 3rem;
+        }
     }
 }
 
@@ -177,7 +181,13 @@
 @mixin footer-logos {
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
     height: 2rem;
     padding: 0 0.6rem;
     width: 2rem;
+    &:hover {
+        height: 2.5rem;
+        padding: 0;
+        width: 2.5rem;
+    }
 }

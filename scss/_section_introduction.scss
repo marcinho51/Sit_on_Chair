@@ -12,6 +12,7 @@
             padding-left: 0.5rem;
             &:hover {
                 cursor: pointer;
+                font-size: 6.5rem;
             }
         }
         .introduction--right-wing {
@@ -19,6 +20,7 @@
             font-size: 5rem;
             &:hover {
                 cursor: pointer;
+                font-size: 6.5rem;
             }
         }
     }
@@ -60,11 +62,17 @@
             border: 1px solid transparent;
             border-radius: 10px;
             color: $colorWhite;
+            cursor: pointer;
             font-size: 1.5rem;
             height: 3rem;
             margin: 2rem 0 0 7rem;
             text-transform: uppercase;
             width: 16rem;
+            &:hover {
+                margin-left: 7rem;
+                height: 3.2rem;
+                width: 17rem;
+            }
         }
     }
 }

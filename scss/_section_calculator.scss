@@ -103,14 +103,17 @@
         }
     }
     .calculator__image {
-        .calculator__image--red-chair {
-            background-image: url("../images/old_chair.png");
+        .calculator__image--chair {
+            background-image: url("../images/white_chair.jpg");
             background-repeat: no-repeat;
             background-size: contain;
-            height: 20rem;
-            margin-left: 1rem;
+            height: 30rem;
             margin-top: 2rem;
-            width: 80%;
+            width: 90%;
+            &:hover {
+                margin-right: 1rem;
+                width: 95%;
+            }
         }
     }
     .calculator__summary {
@@ -196,6 +199,7 @@
         background-color: $colorBlue;
         border-radius: 0.5rem;
         color: $colorWhite;
+        cursor: pointer;
         display: inline-block;
         font-size: 1.5rem;
         padding: 0.6rem 1.9rem;
@@ -205,6 +209,11 @@
         text-decoration: none;
         text-transform: uppercase;
         width: 80%;
+        &:hover {
+            margin-left: 0.9rem;
+            padding: 1rem 1.9rem;
+            width: 90%;
+        }
     }
 }
 

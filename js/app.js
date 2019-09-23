@@ -112,7 +112,7 @@ arrow.on('click', e => {
                         break;
                     }
             }
-            const titleValue = Number($('.title.value').text());
+            const titleValue = Number($('.calculator--panel--title.value').text());
             const colorValue = Number($('.color.value').text())
             const patternValue = Number($('.pattern.value').text());
             const transportValue = Number($('.transport.value').text())
@@ -133,10 +133,10 @@ $('.calculator--checkbox label').on('click', () => {
     if ($('.calculator--checkbox label').attr("class") === "active") {
         $('.transport').text("Transport");
         $('.transport.value').text(80);
-        $('.calculator--sum strong').text(zeroCalculator + 80);
+        $('.calculator--sum strong').text(Number($('.calculator--panel--title.value').text()) + Number($('.color.value').text()) + Number($('.pattern.value').text()) + 80);
     } else {
         $('.transport').text("");
         $('.transport.value').text("");
-        $('.calculator--sum strong').text(zeroCalculator);
+        $('.calculator--sum strong').text(Number($('.calculator--panel--title.value').text()) + Number($('.color.value').text()) + Number($('.pattern.value').text()));
     }
 });

@@ -89,6 +89,7 @@
                     border: 1px solid transparent;
                     border-radius: 10px;
                     color: $colorWhite;
+                    cursor: pointer;
                     font-size: 2rem;
                     height: 4.5rem;
                     opacity: 1;
@@ -97,7 +98,11 @@
                     left: -10px;
                     text-transform: uppercase;
                     font-weight: 700;
-                    width: 100%;
+                    width: 90%;
+                    &:hover {
+                        height: 5rem;
+                        width: 100%;
+                    }
                 }
             }
         }
