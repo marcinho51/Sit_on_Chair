@@ -42,11 +42,11 @@ next.on('click', () => {
 
 // calculator
 
-const arrow = $('.list_arrow');
+const arrow = $('.calculator--list_arrow');
 
 
-$('.sum strong').text(0);
-let zeroCalculator = Number($('.sum strong').text());
+$('.calculator--sum strong').text(0);
+let zeroCalculator = Number($('.calculator--sum strong').text());
 zeroCalculator = 0;
 
 arrow.on('click', e => {
@@ -57,22 +57,22 @@ arrow.on('click', e => {
             switch ($(e.target).text()) {
                 case "Clair":
                     {
-                        $('.title').text($(e.target).text());
-                        $('.title.value').text(500);
+                        $('.calculator--panel--title').text($(e.target).text());
+                        $('.calculator--panel--title.value').text(500);
                         zeroCalculator += 500;
                         break;
                     }
                 case "Margarita":
                     {
-                        $('.title').text($(e.target).text());
-                        $('.title.value').text(400);
+                        $('.calculator--panel--title').text($(e.target).text());
+                        $('.calculator--panel--title.value').text(400);
                         zeroCalculator += 400;
                         break;
                     }
                 case "Selena":
                     {
-                        $('.title').text($(e.target).text());
-                        $('.title.value').text(300);
+                        $('.calculator--panel--title').text($(e.target).text());
+                        $('.calculator--panel--title.value').text(300);
                         zeroCalculator += 300;
                         break;
                     }
@@ -118,8 +118,7 @@ arrow.on('click', e => {
             const transportValue = Number($('.transport.value').text())
 
             const allValue = titleValue + colorValue + patternValue + transportValue;
-            console.log(allValue);
-            $('.sum strong').text(allValue);
+            $('.calculator--sum strong').text(allValue);
             $(e.target).parent().css("display", "none");
         });
     } else {
@@ -127,15 +126,17 @@ arrow.on('click', e => {
     }
 });
 
-$('.checkbox label').on('click', () => {
-    $('.checkbox label').toggleClass("active");
-    if ($('.checkbox label').attr("class") === "active") {
+// calculator - transport
+
+$('.calculator--checkbox label').on('click', () => {
+    $('.calculator--checkbox label').toggleClass("active");
+    if ($('.calculator--checkbox label').attr("class") === "active") {
         $('.transport').text("Transport");
         $('.transport.value').text(80);
-        $('.sum strong').text(zeroCalculator + 80);
+        $('.calculator--sum strong').text(zeroCalculator + 80);
     } else {
         $('.transport').text("");
         $('.transport.value').text("");
-        $('.sum strong').text(zeroCalculator);
+        $('.calculator--sum strong').text(zeroCalculator);
     }
 });
