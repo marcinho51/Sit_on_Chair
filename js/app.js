@@ -13,31 +13,31 @@ margarita.on('mouseleave', e => margarita.children().css("display", "block"));
 
 const prev = $('.introduction--left-wing');
 const next = $('.introduction--right-wing');
-let sliderElements = $('.introduction__photo-part li');
+let sliderElements = $('.introduction__photo-part div');
 let sliderCounter = 0;
 
-sliderElements.eq(sliderCounter).addClass("visible");
+sliderElements.eq(sliderCounter).show();
 
 
 
 prev.on('click', () => {
-    sliderElements.eq(sliderCounter).removeClass("visible");
+    sliderElements.eq(sliderCounter).hide();
     sliderCounter--;
 
     if (sliderCounter < 0) {
         sliderCounter = sliderElements.length - 1;
     }
-    sliderElements.eq(sliderCounter).addClass("visible");
+    sliderElements.eq(sliderCounter).show();
 });
 
 next.on('click', () => {
-    sliderElements.eq(sliderCounter).removeClass("visible");
+    sliderElements.eq(sliderCounter).hide();
     sliderCounter++;
 
     if (sliderCounter > sliderElements.length - 1) {
         sliderCounter = 0;
     }
-    sliderElements.eq(sliderCounter).addClass("visible");
+    sliderElements.eq(sliderCounter).show();
 });
 
 // calculator

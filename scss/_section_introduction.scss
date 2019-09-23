@@ -25,16 +25,35 @@
         }
     }
     .introduction__photo-part {
-        ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .introduction_photo-part--first-photo {
+            background-image: url("../images/black_chair.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: none;
             height: 20rem;
-            list-style: none;
-            width: 100%;
-            li {
-                display: none;
-            }
+            width: 90%;
+        }
+        .introduction_photo-part--second-photo {
+            background-image: url("../images/orange_chair.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: none;
+            height: 20rem;
+            width: 90%;
+        }
+        .introduction_photo-part--third-photo {
+            background-image: url("../images/red_chair.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: none;
+            height: 20rem;
+            width: 90%;
         }
         .visible {
-            display: inline-block;
+            display: block;
         }
     }
     .introduction__text-part {
